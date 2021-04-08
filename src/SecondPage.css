@@ -1,0 +1,145 @@
+.second-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.mc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(252, 192, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 192, 250, 1) 0%,
+    rgba(191, 181, 252, 1) 38%,
+    rgba(145, 184, 246, 1) 100%
+  );
+  padding: 7px 10px;
+  height: 35px;
+}
+
+.left-header,
+.right-header {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.left-header li,
+.right-header li {
+  margin: 0 10px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0 2px 2px;
+}
+
+.mc-header .icons {
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0 2px 2px);
+}
+
+.fa-apple {
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+.main-container {
+  position: relative;
+  height: 100%;
+  background-color: black;
+}
+
+.forders {
+  position: absolute;
+  right: 2%;
+  top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.forder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.forder .forder-text {
+  color: white;
+}
+
+.forders .icons:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.modal-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  height: 600px;
+  background-color: #f7fbfd;
+  border-radius: 10px;
+}
+
+.modal-page .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  padding: 20px;
+  background-color: #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-page .buttons {
+  display: flex;
+}
+
+.modal-page .buttons li {
+  margin: 0 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-page .buttons li:nth-child(1) {
+  background-color: #f54a3f;
+}
+
+.modal-page .buttons li:nth-child(2) {
+  background-color: #fcbc2e;
+}
+
+.modal-page .buttons li:nth-child(3) {
+  background-color: #26c83f;
+}
+
+.modal-page .buttons li:hover {
+  cursor: pointer;
+}
+
+.modal-page .input-text input {
+  outline: none;
+  width: 300px;
+  height: 27px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.modal-page .name .title {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
